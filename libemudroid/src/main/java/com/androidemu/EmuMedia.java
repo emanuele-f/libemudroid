@@ -16,6 +16,9 @@ public class EmuMedia
 	private static AudioTrack track;
 	private static Emulator.OnFrameDrawnListener onFrameDrawnListener;
 	private static float volume = AudioTrack.getMaxVolume();
+    private static boolean must_resume = false;
+    private static long play_millis = 0;
+    private static final long MIN_MILLIS_BEFORE_PLAY = 300;
 
     static void destroy()
 	{
@@ -104,12 +107,15 @@ public class EmuMedia
 		{
 			track.stop();
 			track = null;
+            must_resume = false;
 		}
 	}
 
 	static void audioStart() {
-	    if (track != null)
-            track.play();
+	    if (track != null) {
+            play_millis = System.currentTimeMillis();
+            must_resume = true;
+        }
 	}
 
 	static void audioStop()
@@ -118,18 +124,27 @@ public class EmuMedia
 		{
 			track.stop();
 			track.flush();
+            must_resume = false;
 		}
 	}
 
 	static void audioPause()
 	{
-		if (track != null)
+		if (track != null) {
             track.pause();
+            must_resume = false;
+        }
 	}
 
 	static void audioPlay(byte[] data, int size)
 	{
 		if (track != null)
             track.write(data, 0, size);
+
+        /* Delay actual resume to prevent crackling sounds */
+        if (must_resume && ((System.currentTimeMillis() - play_millis) >= MIN_MILLIS_BEFORE_PLAY)) {
+            track.play();
+            must_resume = false;
+        }
 	}
 }
