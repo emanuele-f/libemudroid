@@ -1,0 +1,51 @@
+{
+  "buildFiles": [
+    "/home/emanuele/StudioProjects/libemudroid/libemudroid/Android.mk"
+  ],
+  "cleanCommands": [
+    "/home/emanuele/android-sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/Android.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/debug/lib clean"
+  ],
+  "libraries": {
+    "emu-debug-arm64-v8a": {
+      "buildCommand": "/home/emanuele/android-sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/Android.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/debug/lib /home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/libemu.so",
+      "toolchain": "toolchain-arm64-v8a",
+      "abi": "arm64-v8a",
+      "artifactName": "emu",
+      "files": [
+        {
+          "src": "/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/emulator.cpp",
+          "flags": "-gcc-toolchain /home/emanuele/android-sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 -target aarch64-none-linux-android -ffunction-sections -funwind-tables -fstack-protector-strong -fpic -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -g -fno-exceptions -fno-rtti -O0 -UNDEBUG -fno-limit-debug-info -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/include/ -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/include/nativehelper -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/debug/jni -I/home/emanuele/android-sdk/ndk-bundle/sources/cxx-stl/system/include -I/home/emanuele/StudioProjects/libemudroid/libemudroid -DANDROID -D__ANDROID_API__\u003d21 -Wa,--noexecstack -Wformat -Werror\u003dformat-security --sysroot /home/emanuele/android-sdk/ndk-bundle/sysroot -isystem /home/emanuele/android-sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android"
+        },
+        {
+          "src": "/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/emumedia.cpp",
+          "flags": "-gcc-toolchain /home/emanuele/android-sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 -target aarch64-none-linux-android -ffunction-sections -funwind-tables -fstack-protector-strong -fpic -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -g -fno-exceptions -fno-rtti -O0 -UNDEBUG -fno-limit-debug-info -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/include/ -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/include/nativehelper -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/debug/jni -I/home/emanuele/android-sdk/ndk-bundle/sources/cxx-stl/system/include -I/home/emanuele/StudioProjects/libemudroid/libemudroid -DANDROID -D__ANDROID_API__\u003d21 -Wa,--noexecstack -Wformat -Werror\u003dformat-security --sysroot /home/emanuele/android-sdk/ndk-bundle/sysroot -isystem /home/emanuele/android-sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android"
+        },
+        {
+          "src": "/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/JNIHelp.c",
+          "flags": "-gcc-toolchain /home/emanuele/android-sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 -target aarch64-none-linux-android -ffunction-sections -funwind-tables -fstack-protector-strong -fpic -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -g -O0 -UNDEBUG -fno-limit-debug-info -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/include/ -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/include/nativehelper -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/debug/jni -I/home/emanuele/android-sdk/ndk-bundle/sources/cxx-stl/system/include -I/home/emanuele/StudioProjects/libemudroid/libemudroid -DANDROID -D__ANDROID_API__\u003d21 -Wa,--noexecstack -Wformat -Werror\u003dformat-security --sysroot /home/emanuele/android-sdk/ndk-bundle/sysroot -isystem /home/emanuele/android-sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android"
+        },
+        {
+          "src": "/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/main.cpp",
+          "flags": "-gcc-toolchain /home/emanuele/android-sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 -target aarch64-none-linux-android -ffunction-sections -funwind-tables -fstack-protector-strong -fpic -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -g -fno-exceptions -fno-rtti -O0 -UNDEBUG -fno-limit-debug-info -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/include/ -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/include/nativehelper -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/debug/jni -I/home/emanuele/android-sdk/ndk-bundle/sources/cxx-stl/system/include -I/home/emanuele/StudioProjects/libemudroid/libemudroid -DANDROID -D__ANDROID_API__\u003d21 -Wa,--noexecstack -Wformat -Werror\u003dformat-security --sysroot /home/emanuele/android-sdk/ndk-bundle/sysroot -isystem /home/emanuele/android-sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android"
+        },
+        {
+          "src": "/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/ticks.c",
+          "flags": "-gcc-toolchain /home/emanuele/android-sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 -target aarch64-none-linux-android -ffunction-sections -funwind-tables -fstack-protector-strong -fpic -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -g -O0 -UNDEBUG -fno-limit-debug-info -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/include/ -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/main/jni/libnativehelper/include/nativehelper -I/home/emanuele/StudioProjects/libemudroid/libemudroid/src/debug/jni -I/home/emanuele/android-sdk/ndk-bundle/sources/cxx-stl/system/include -I/home/emanuele/StudioProjects/libemudroid/libemudroid -DANDROID -D__ANDROID_API__\u003d21 -Wa,--noexecstack -Wformat -Werror\u003dformat-security --sysroot /home/emanuele/android-sdk/ndk-bundle/sysroot -isystem /home/emanuele/android-sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android"
+        }
+      ],
+      "output": "/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/libemu.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-arm64-v8a": {
+      "cCompilerExecutable": "/home/emanuele/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+      "cppCompilerExecutable": "/home/emanuele/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

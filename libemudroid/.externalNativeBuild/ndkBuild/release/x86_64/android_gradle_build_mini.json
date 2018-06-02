@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/home/emanuele/StudioProjects/libemudroid/libemudroid/Android.mk"
+  ],
+  "cleanCommands": [
+    "/home/emanuele/android-sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/Android.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/lib clean"
+  ],
+  "libraries": {
+    "emu-release-x86_64": {
+      "artifactName": "emu",
+      "buildCommand": "/home/emanuele/android-sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/Android.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/lib /home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/obj/local/x86_64/libemu.so",
+      "abi": "x86_64",
+      "output": "/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/obj/local/x86_64/libemu.so"
+    }
+  }
+}

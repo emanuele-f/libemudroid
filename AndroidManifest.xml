@@ -1,7 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.androidemu"
-    android:versionCode="2"
-    android:versionName="3.1" >
-
-    <uses-sdk android:minSdkVersion="3" />
-</manifest>

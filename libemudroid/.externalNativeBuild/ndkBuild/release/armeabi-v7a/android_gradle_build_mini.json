@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/home/emanuele/StudioProjects/libemudroid/libemudroid/Android.mk"
+  ],
+  "cleanCommands": [
+    "/home/emanuele/android-sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/lib clean"
+  ],
+  "libraries": {
+    "emu-release-armeabi-v7a": {
+      "artifactName": "emu",
+      "buildCommand": "/home/emanuele/android-sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/lib /home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libemu.so",
+      "abi": "armeabi-v7a",
+      "output": "/home/emanuele/StudioProjects/libemudroid/libemudroid/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libemu.so"
+    }
+  }
+}
