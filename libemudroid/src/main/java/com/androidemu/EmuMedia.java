@@ -1,5 +1,6 @@
 package com.androidemu;
 
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Rect;
@@ -51,8 +52,9 @@ public class EmuMedia
 		canvas.drawColor(Color.BLACK);
 		if (flip) canvas.rotate(180, canvas.getWidth() / 2, canvas.getHeight() / 2);
 
-		canvas.drawBitmap(image, 0, region.width(), region.left, region.top,
-				region.width(), region.height(), false, null);
+		Bitmap bitmap = Bitmap.createBitmap(image, 0, region.width(), region.width(), region.height(),
+				Bitmap.Config.RGB_565);
+		canvas.drawBitmap(bitmap, region.left, region.top, null);
 		if (onFrameDrawnListener != null) onFrameDrawnListener.onFrameDrawn(canvas);
 
 		holder.unlockCanvasAndPost(canvas);
