@@ -4,6 +4,7 @@ import android.content.Context;
 
 import android.graphics.Canvas;
 
+import android.os.Build;
 import android.view.SurfaceHolder;
 
 import java.io.IOException;
@@ -28,9 +29,16 @@ public class Emulator
 
 	public static Emulator createInstance(Context context, String engine)
 	{
+        final String libDir;
+        int sdk_level = android.os.Build.VERSION.SDK_INT;
+
 		if (emulator == null) System.loadLibrary("emu");
 
-		final String libDir = "/data/data/" + context.getPackageName() + "/lib";
+        if (sdk_level >= Build.VERSION_CODES.GINGERBREAD)
+            libDir = context.getApplicationInfo().nativeLibraryDir;
+        else
+            libDir = "/data/data/" + context.getPackageName() + "/lib";
+
 		if (!engine.equals(engineLib))
 		{
 			engineLib = engine;
